@@ -1,0 +1,57 @@
+﻿body {
+    
+}
+.vh100{
+    height:100vh;
+}
+.main-image {
+    width: 100%;
+    background: linear-gradient(to bottom, black, transparent ) /*,linear-gradient(to top, black, transparent )*/, url(/Images/main-image.jpeg);
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+}
+.logo{
+    text-decoration:none !important;
+
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .main-image {
+        width: 100%;
+        background: linear-gradient(to bottom, black, black );
+        background-size: cover;
+        height: 100vh;
+        
+    }
+    #main-screen-join-button {
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        right: 0%;
+        border-radius:0;
+        
+
+    }
+    #main-page-join-button-text{
+        font-size:6.5vw;
+    }
+    #main-screen-container {
+        margin-top: 10% !important;
+        padding-top: 0 !important;
+    }
+
+    #main-text-friend {
+        font-size: 13vw;
+    }
+
+    #main-text-child{
+        display:none;
+    }
+}

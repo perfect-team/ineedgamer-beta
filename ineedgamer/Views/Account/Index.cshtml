@@ -1,0 +1,190 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<link href="~/Content/ineedgamer/account.css" rel="stylesheet" />
+<div class="container-fluid">
+    <div class="row">
+        <div style="height:100vh;" class="col-md-2 pt-5 pl-0 pr-0 account-nav">
+            <div class="pt-3">
+                <div class="nav flex-column nav-pills p-0 m-0" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                    <a class="nav-link active rounded-0 h5 p-3" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Hesabım</a>
+
+                    <a class="nav-link rounded-0 h5 p-3" id="v-pills-gizli-tab" data-toggle="pill" href="#v-pills-gizli" role="tab" aria-controls="v-pills-gizli" aria-selected="false">Gizlilik ve Güvenlik</a>
+
+                    <a class="nav-link rounded-0 h5 p-3" id="v-pills-bildirim-tab" data-toggle="pill" href="#v-pills-bildirim" role="tab" aria-controls="v-pills-bildirim" aria-selected="false">Bildirimler</a>
+
+                    <a class="nav-link rounded-0 h5 p-3" id="v-pills-friend-tab" data-toggle="pill" href="#v-pills-friend" role="tab" aria-controls="v-pills-friend" aria-selected="false">Arkadaşlarım</a>
+
+                    <a class="nav-link rounded-0 h5 p-3" id="v-pills-blocked-tab" data-toggle="pill" href="#v-pills-blocked" role="tab" aria-controls="v-pills-blocked" aria-selected="false">Engellenenler</a>
+
+                    <a class="nav-link rounded-0 h5 p-3" id="v-pills-lang-tab" data-toggle="pill" href="#v-pills-lang" role="tab" aria-controls="v-pills-lang" aria-selected="false">Dil</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 pt-5 bg-transparent">
+            <div class="pt-3">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active bg-transparent" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="text-light">
+                            <h1>Hesabım</h1>
+
+                            <h3>Avatar</h3>
+                            <img width="100" src="~/Images/icon.jpg" alt="Alternate Text" />
+
+                            <hr />
+
+                            <h3>Kullanıcı Adı</h3>
+                            <span class="text-secondary h4">onursakalli</span>
+                            <i class="far fa-edit float-right text-warning fa-2x"></i>
+                            <hr />
+
+                            <h3>E-mail adresi</h3>
+                            <span class="text-secondary h4">onursakalli97@gmail.com</span>
+                            <i class="far fa-edit float-right text-warning fa-2x"></i>
+                            <hr />
+
+                            <h3>Doğum tarihi</h3>
+                            <span class="text-secondary h4">04/08/1997</span>
+                            <i class="far fa-edit float-right text-warning fa-2x"></i>
+                            <hr />
+
+                            <h3>Cinsiyet</h3>
+                            <span class="text-secondary h4">Erkek</span>
+                            <i class="far fa-edit float-right text-warning fa-2x"></i>
+                            <hr />
+                        </div>
+
+
+                    </div>
+
+                    <div class="tab-pane fade bg-transparent" id="v-pills-gizli" role="tabpanel" aria-labelledby="v-pills-gizli-tab">
+                        <div class="text-light">
+                            <h1>Gizlilik ve Güvenlik</h1>
+
+                            <h3>Seni kimler arkadaş olarak ekleyebilir</h3>
+
+                            <span class="text-secondary h4">Herkes</span>
+                            <label class="switch float-right">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <hr />
+
+                            <span class="text-secondary h4">Arkadaşlarımın arkadaşları</span>
+                            <label class="switch float-right">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <hr />
+
+                            <span class="text-secondary h4">Hiçkimse</span>
+                            <label class="switch float-right">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <hr />
+
+                            <h3>Cinsiyet</h3>
+                            <span class="text-secondary h4">Cinsiyetimi gizle</span>
+                            <label class="switch float-right">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <hr />
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade bg-transparent" id="v-pills-bildirim" role="tabpanel" aria-labelledby="v-pills-bildirim-tab">
+                        <div class="text-light">
+                            <h1>Bildirimler</h1>
+
+                            <h3>Bildirim ayaları</h3>
+
+                            <span class="text-secondary h4">Bildirimleri kapat</span>
+                            <label class="switch float-right">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="tab-pane fade bg-transparent" id="v-pills-friend" role="tabpanel" aria-labelledby="v-pills-friend-tab">
+                        <div class="text-light m-0">
+
+                            <h1>Arkadaşlar</h1>
+
+                            <div class="row p-0 m-0">
+                                <div class="col-md-1 m-1 p-0">
+                                    <div class="friend-capsule w-100">
+                                        <img class="friend-image" data-toggle="tooltip" data-placement="top" title="Tooltip on top" width="100%" height="auto" src="~/Images/icon.jpg" alt="Alternate Text" />
+                                    </div>
+                                </div>
+                                <div class="col-md-1 m-1 p-0">
+                                    <div class="friend-capsule w-100">
+                                        <img class="friend-image" data-toggle="tooltip" data-placement="top" title="Tooltip on top" width="100%" height="auto" src="~/Images/icon.jpg" alt="Alternate Text" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade bg-transparent" id="v-pills-blocked" role="tabpanel" aria-labelledby="v-pills-blocked-tab">
+                        <div class="text-light m-0">
+
+                            <h1>Engellenenler</h1>
+
+                            <div class="row p-0 m-0">
+                                <div class="col-md-1 m-1 p-0">
+                                    <div class="friend-capsule w-100">
+                                        <img class="friend-image" data-toggle="tooltip" data-placement="top" title="Tooltip on top" width="100%" height="auto" src="~/Images/icon.jpg" alt="Alternate Text" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade bg-transparent" id="v-pills-lang" role="tabpanel" aria-labelledby="v-pills-lang-tab">
+                        <div class="text-light m-0">
+
+                            <h1>Dil</h1>
+
+                            <h3>Bir dil seçin</h3>
+
+                            <input type="radio" name="lang" value="turkish" />
+                            <span class="text-secondary h4">Türkçe</span>
+                            <label class="switch float-right">
+                                <img width="35" src="~/Images/turkish.png" alt="Alternate Text" />
+                            </label>
+                            <hr />
+
+                            <input type="radio" name="lang" value="english" />
+                            <span class="text-secondary h4">İngilizce</span>
+                            <label class="switch float-right">
+                                <img width="35" src="~/Images/english.png" alt="Alternate Text" />
+                            </label>
+                            <hr />
+
+                        </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+
+
+
+    <script src="~/Scripts/ineedgamer/account.js"></script>
+}
+
+

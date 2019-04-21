@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container mt-1 pt-5">
+    <div class="row mt-3">
+        <div class="col-md-5 m-5 mx-auto">
+            <div class="text-center"><i class="fas fa-trophy fa-5x text-light"></i></div>
+            <input type="text" name="username" value="" placeholder="Kullanıcı adı" class="form-control form-control-lg mt-3 text-center" />
+            <input type="email" name="email" value="" placeholder="E-mail" class="form-control form-control-lg mt-3 text-center" />
+            <input type="password" name="password" value="" placeholder="Parola" class="form-control form-control-lg mt-3 text-center" />
+            <button class="btn btn-outline-warning btn-lg mt-3 font-weight-bold w-100">Kayıt ol</button>
+
+            <div class="text-center mt-2"><a class="text-light mt-3" href="/Login">Zaten bir ineedgamer hesabın varsa giriş yap</a></div>
+            <div class="row mt-2">
+                <div class="col-md-6 p-2"><button class="btn btn-outline-dark btn-lg w-100"><i class="fab fa-steam"></i> Steam ile bağlan</button></div>
+                <div class="col-md-6 p-2"> <button class="btn btn-outline-dark btn-lg w-100"><i class="fab fa-google"></i> Google ile bağlan</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Scripts/ineedgamer/login.js"></script>
+}
+
+
